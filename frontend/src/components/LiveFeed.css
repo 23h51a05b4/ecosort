@@ -1,0 +1,95 @@
+/* LiveFeed component styles */
+
+.livefeed {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--accent);
+}
+
+.livefeed__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.livefeed__flip-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.livefeed__flip-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent);
+}
+
+.livefeed__viewport {
+  flex: 1;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+.livefeed__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.livefeed__stack {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.livefeed__video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.livefeed__placeholder {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.livefeed__loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.livefeed__icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 8px;
+}

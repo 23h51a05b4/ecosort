@@ -1,0 +1,26 @@
+/* StatsPanel component styles */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.stats-card {
+  min-height: 260px;
+}
+
+.stats-card--wide {
+  grid-column: 1 / -1;
+}
+
+.stats-chart {
+  position: relative;
+  height: 220px;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

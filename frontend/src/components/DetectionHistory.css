@@ -1,0 +1,112 @@
+/* DetectionHistory component styles */
+
+.history {
+  max-height: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history__list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history__empty {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}
+
+.history__item {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.history__item:hover {
+  background: var(--bg-card-hover);
+}
+
+.history__thumb-wrap {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.history__thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.history__thumb--empty {
+  background: var(--border);
+}
+
+.history__thumb--fallback {
+  background: linear-gradient(135deg, #1e3a5f, #0ea5e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.history__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.history__delete {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+.history__delete:hover {
+  background: #ef44441a;
+  color: #ef4444;
+}
+
+.history__label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.history__conf {
+  font-size: 0.78rem;
+  color: var(--accent-green);
+}
+
+.history__time {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
